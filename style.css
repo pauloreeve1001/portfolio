@@ -1,0 +1,370 @@
+:root {
+    --bg-main: #1a1d24;
+    --bg-secondary: #242832;
+    --accent: #22C55E;
+}
+
+/* Global styles */
+* {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* Headings */
+h2, h3 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Accent color helper */
+.accent {
+    color: var(--accent);
+}
+
+/* Navbar */
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 1%;
+
+}
+
+#navbar-items {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+#setting-icon {
+    justify-self: end;
+    width: 10%;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+hr {
+    color: white;
+}
+
+/* Main container */
+main {
+    padding: 2%;
+}
+
+html, body
+{
+    height: 100%;
+    background-color: var(--bg-main);
+}
+
+/* Sections */
+section {
+    margin-bottom: 5%;
+    justify-items: center;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2rem;
+}
+
+#home-text {
+    max-width: 800px; 
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+#home-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#home-text h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 5rem;
+    color: var(--accent);
+}
+
+#home-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    #home-text h1 {
+        font-size: 1.8rem;
+    }
+
+    #home-text h2 {
+        font-size: 1.2rem;
+    }
+
+    #home-text p {
+        font-size: 1rem;
+        padding: 0 1rem; /* some horizontal padding */
+    }
+}
+
+/* Feature project container */
+#featured-project-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; 
+    margin-bottom: 5vh;
+}
+
+.project-item {
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 30px;
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Call-to-action buttons */
+.cta {
+    background-color: var(--accent);
+    padding: 1.5%;
+    border-radius: 20px;
+    font-size: larger;
+    color: var(--bg-main);
+}
+
+/* Titles */
+.title {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Card container */
+
+#card-container{
+    align-items: center;
+    justify-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem;
+    border-radius: 12px;
+    padding: 5%;
+    background-color: var(--bg-secondary);
+}
+
+
+.card img{
+    width: 20vw;
+}
+
+.card p{
+    margin-bottom: 6%;
+}
+
+/* Call-to-action buttons */
+.cta {
+    background-color: var(--accent);
+    width: 20vw;
+    padding: 1.5%;
+    border-radius: 6px;
+    font-size: larger;
+    text-align: center;
+    color: var(--bg-main);
+}
+
+/* Skill Card */
+#skills {
+    padding: 3%;
+    background-color: var(--bg-main);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.skill-card h3 {
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-card li {
+    margin-bottom: 0.4rem;
+}
+
+/* About card */
+#about {
+    padding: 3%;
+    background-color: var(--bg-main);
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-card {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.about-card p {
+    margin-bottom: 1.5rem;
+}
+
+.about-card .accent {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* Contacts */
+#contact {
+    padding: 3%;
+    background-color: var(--bg-main);
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.contact-form .cta {
+    background-color: var(--accent);
+    color: var(--bg-main);
+    padding: 0.8rem 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+/* Default: desktop */
+#navbar-items {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+/* Mobile: hide links, show icon */
+@media screen and (max-width: 768px) {
+    #navbar
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbar-items {
+        display: none; /* hide links */
+        flex-direction: column;
+        padding-bottom: 2%;
+        gap: 1rem;
+        background-color: var(--bg-main);
+        position: absolute;
+        top: 50px; /* below navbar */
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar.show #navbar-items {
+        display: flex; /* show when menu clicked */
+    }
+
+    #setting-icon {
+        display: block; /* make sure icon is visible */
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+  border-radius: 10px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
